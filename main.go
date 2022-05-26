@@ -3,15 +3,22 @@ package main
 import "fmt"
 
 type person struct {
-	fistName string
-	lastName string
+	firstName string
+	lastName  string
 }
 
 func main() {
 	Brooke := person{
-		fistName: "Brooke",
-		lastName: "Bryski",
+		firstName: "Brooke",
+		lastName:  "Bryski",
+	}
+
+	Alex := person{
+		firstName: "Alex",
+		lastName:  "Smith",
 	}
 
 	fmt.Println(Brooke)
+	fmt.Println(Alex.firstName)
+
 }
